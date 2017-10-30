@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('untitled3 App', () => {
+describe('bgs-work App', () => {
   let page: AppPage;
 
   beforeEach(() => {

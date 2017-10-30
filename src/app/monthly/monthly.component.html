@@ -1,0 +1,59 @@
+<p>{{months?.length}}</p>
+<p>    Current page: {{pageIndex}}</p>
+<button pButton type="button" (click)="onclick()" label="Click"></button>
+<p-carousel #crsl [value]="months" numVisible="2" pageLinks="9" headerText="Monatsübersicht" (onPage)="setPage($event)" [firstVisible]="goToIndex">
+  <ng-template let-month pTemplate="item" >
+    <div class="ui-grid ui-grid-responsive">
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-12"><i class="fa fa-quora" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6">OV.amountOfRequiredActivations</div>
+
+        <div class="ui-grid-col-2"><span class="department-coo">{{month.amountOfRequiredActivations.value}}</span></div>
+        <div class="ui-grid-col-6">{{month.amountOfRequiredActivations.severity}}</div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6"><span class="badge2" data-badge="6">OV.amountOfTimeSeriesInCriticalStatus</span></div>
+        <div class="ui-grid-col-2">{{month.amountOfTimeSeriesInCriticalStatus.value}}</div>
+        <div class="ui-grid-col-6">{{month.amountOfTimeSeriesInCriticalStatus.severity}}</div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6"><span class="badge1" [attr.data-badge]="month.amountOfTimeSeriesInCriticalStatus.value">OV.amountOfTimeSeriesInCriticalStatus</span></div>
+        <div class="ui-grid-col-2">{{month.amountOfTimeSeriesInCriticalStatus.value}}</div>
+        <div class="ui-grid-col-6">{{month.amountOfTimeSeriesInCriticalStatus.severity}}</div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6"><span [class]="geSeverityClass(month.amountOfTimeSeriesNotSent.severity)" data-badge="8">OV.amountOfTimeSeriesNotSent</span></div>
+        <div class="ui-grid-col-2">{{month.amountOfTimeSeriesNotSent.value}}</div>
+        <div class="ui-grid-col-6">{{month.amountOfTimeSeriesNotSent.severity}}</div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6">OV.amountOfMeteringPointsNotPreparedForMuMM</div>
+        <div class="ui-grid-col-2"><span class="border1">{{month.amountOfMeteringPointsNotPreparedForMuMM.value}}</span></div>
+        <div class="ui-grid-col-6">{{month.amountOfMeteringPointsNotPreparedForMuMM.severity}}</div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6">OV.amountExpectedImportedTs</div>
+        <div class="ui-grid-col-2">{{month.amountOfExpectedNetTimeSeries.value}}/{{month.amountOfImportedNetTimeSeries.value}}</div>
+        <div class="ui-grid-col-6">{{month.amountOfExpectedNetTimeSeries.severity}}</div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6">OV.saldoForLatestTimeSeries</div>
+        <div class="ui-grid-col-2">{{month.saldoForLatestTimeSeries.value}}</div>
+        <div class="ui-grid-col-6">{{month.saldoForLatestTimeSeries.severity}}</div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6">OV.saldoForDifferenceToBalancingRelevantVersion</div>
+        <div class="ui-grid-col-2">{{month.saldoForDifferenceToBalancingRelevantVersion.value}}</div>
+        <div class="ui-grid-col-6">{{month.saldoForDifferenceToBalancingRelevantVersion.severity}}</div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6">OV.saldoForDifferenceToLatestVersion</div>
+        <div class="ui-grid-col-2"><span [style.color] = "month.saldoForDifferenceToLatestVersion.severity">{{month.saldoForDifferenceToLatestVersion.value}}</span></div>
+        <div class="ui-grid-col-6">{{month.saldoForDifferenceToLatestVersion.severity}}</div>
+      </div>
+    </div>
+  </ng-template>
+</p-carousel>

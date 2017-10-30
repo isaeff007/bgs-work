@@ -1,16 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
+import { NgModule , CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { HttpModule, JsonpModule } from '@angular/http';
 import { AppComponent } from './app.component';
+import {CarouselModule, ButtonModule} from 'primeng/primeng';
+
+import { MonthlyComponent } from './monthly/monthly.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MonthlyComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule,
+    JsonpModule,
+    CarouselModule,
+    ButtonModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [
+  CUSTOM_ELEMENTS_SCHEMA
+]
+
 })
 export class AppModule { }

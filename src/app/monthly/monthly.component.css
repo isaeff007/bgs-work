@@ -1,0 +1,91 @@
+.company.ui-organizationchart .ui-organizationchart-node-content.ui-person {
+  padding: 0;
+  border: 0 none;
+}
+
+.node-header,.node-content {
+  padding: .5em .7em;
+}
+
+.node-header {
+  background-color: #495ebb;
+  color: #ffffff;
+}
+
+.node-content {
+  text-align: center;
+  border: 1px solid #495ebb;
+}
+
+.node-content img {
+  border-radius: 50%;
+}
+
+.department-cfo {
+  background-color: #7247bc;
+  color: #ffffff;
+}
+
+.department-coo {
+  background-color: #a534b6;
+  color: #ffffff;
+}
+
+.department-cto {
+  background-color: #e9286f;
+  color: #ffffff;
+}
+
+.ui-person .ui-node-toggler {
+  color: #495ebb !important;
+}
+
+.department-cto .ui-node-toggler {
+  color: #8a0a39 !important;
+}
+
+
+.badge1 {
+  position:relative;
+}
+.badge1[data-badge]:after {
+  content:attr(data-badge);
+  position:absolute;
+  top:-10px;
+  right:-10px;
+  font-size:.7em;
+  background:green;
+  color:white;
+  width:40px;height:18px;
+  text-align:center;
+  line-height:18px;
+  border-radius:50%;
+  box-shadow:0 0 1px #333;
+}
+
+.badge2 {
+  position:relative;
+}
+.badge2[data-badge]:after {
+  content:attr(data-badge);
+  position:absolute;
+  top:-10px;
+  right:-10px;
+  font-size:.7em;
+  background:red;
+  color:white;
+  width:18px;height:18px;
+  text-align:center;
+  line-height:18px;
+  border-radius:50%;
+  box-shadow:0 0 1px #333;
+}
+
+.border1 {
+  border:2px solid red;
+  border-radius:10px;
+  background: darkred;
+  color: white;
+}
+
+

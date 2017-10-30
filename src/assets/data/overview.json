@@ -1,0 +1,296 @@
+[
+  {
+    "tenant": "eagnetzint20170208",
+    "year": 2017,
+    "month": 10,
+    "period": "FIRST_BGS",
+    "amountOfRequiredActivations": {
+      "value": 5,
+      "severity": "GREEN"
+    },
+    "amountOfTimeSeriesInCriticalStatus": {
+      "value": 7,
+      "severity": "RED"
+    },
+    "amountOfTimeSeriesNotSent": {
+      "value": 2,
+      "severity": "RED"
+    },
+    "amountOfMeteringPointsNotPreparedForMuMM": {
+      "value": 567,
+      "severity": "GREEN"
+    },
+    "amountOfExpectedNetTimeSeries": {
+      "value": 9,
+      "severity": "YELLOW"
+    },
+    "amountOfImportedNetTimeSeries": {
+      "value": 20,
+      "severity": "GREEN"
+    },
+    "saldoForLatestTimeSeries": {
+      "value": 2400,
+      "severity": "GREEN"
+    },
+    "saldoForDifferenceToBalancingRelevantVersion": {
+      "value": 230,
+      "severity": "YELLOW"
+    },
+    "saldoForDifferenceToLatestVersion": {
+      "value": 700,
+      "severity": "RED"
+    }
+  },
+  {
+    "tenant": "eagnetzint20170208",
+    "year": 2017,
+    "month": 9,
+    "period": "VERIFICATION_FIRST_BGS",
+    "amountOfRequiredActivations": {
+      "value": 8,
+      "severity": "GREEN"
+    },
+    "amountOfTimeSeriesInCriticalStatus": {
+      "value": 9,
+      "severity": "RED"
+    },
+    "amountOfTimeSeriesNotSent": {
+      "value": 876,
+      "severity": "RED"
+    },
+    "amountOfMeteringPointsNotPreparedForMuMM": {
+      "value": 789,
+      "severity": "GREEN"
+    },
+    "amountOfExpectedNetTimeSeries": {
+      "value": 9,
+      "severity": "YELLOW"
+    },
+    "amountOfImportedNetTimeSeries": {
+      "value": 6,
+      "severity": "YELLOW"
+    },
+    "saldoForLatestTimeSeries": {
+      "value": 2490,
+      "severity": "GREEN"
+    },
+    "saldoForDifferenceToBalancingRelevantVersion": {
+      "value": 230,
+      "severity": "YELLOW"
+    },
+    "saldoForDifferenceToLatestVersion": {
+      "value": 700,
+      "severity": "RED"
+    }
+  },
+  {
+    "tenant": "eagnetzint20170208",
+    "year": 2017,
+    "month": 8,
+    "period": "VERIFICATION_FIRST_BGS",
+    "amountOfRequiredActivations": {
+      "value": 8,
+      "severity": "GREEN"
+    },
+    "amountOfTimeSeriesInCriticalStatus": {
+      "value": 19,
+      "severity": "RED"
+    },
+    "amountOfTimeSeriesNotSent": {
+      "value": 0,
+      "severity": "GREEN"
+    },
+    "amountOfMeteringPointsNotPreparedForMuMM": {
+      "value": 0,
+      "severity": "GREEN"
+    },
+    "amountOfExpectedNetTimeSeries": {
+      "value": 9,
+      "severity": "YELLOW"
+    },
+    "amountOfImportedNetTimeSeries": {
+      "value": 6,
+      "severity": "YELLOW"
+    },
+    "saldoForLatestTimeSeries": {
+      "value": 2100,
+      "severity": "YELLOW"
+    },
+    "saldoForDifferenceToBalancingRelevantVersion": {
+      "value": 10,
+      "severity": "GREEN"
+    },
+    "saldoForDifferenceToLatestVersion": {
+      "value": 700,
+      "severity": "RED"
+    }
+  },{
+  "tenant": "eagnetzint20170208",
+  "year": 2017,
+  "month": 7,
+  "period": "SECOND_BGS",
+  "amountOfRequiredActivations": {
+    "value": 19,
+    "severity": "RED"
+  },
+  "amountOfTimeSeriesInCriticalStatus": {
+    "value": 19,
+    "severity": "RED"
+  },
+  "amountOfTimeSeriesNotSent": {
+    "value": 0,
+    "severity": "GREEN"
+  },
+  "amountOfMeteringPointsNotPreparedForMuMM": {
+    "value": 0,
+    "severity": "GREEN"
+  },
+  "amountOfExpectedNetTimeSeries": {
+    "value": 9,
+    "severity": "YELLOW"
+  },
+  "amountOfImportedNetTimeSeries": {
+    "value": 6,
+    "severity": "YELLOW"
+  },
+  "saldoForLatestTimeSeries": {
+    "value": 2100,
+    "severity": "YELLOW"
+  },
+  "saldoForDifferenceToBalancingRelevantVersion": {
+    "value": 10,
+    "severity": "GREEN"
+  },
+  "saldoForDifferenceToLatestVersion": {
+    "value": 700,
+    "severity": "RED"
+  }
+},
+  {
+    "tenant": "eagnetzint20170208",
+    "year": 2017,
+    "month": 6,
+    "period": "SECOND_BGS",
+    "amountOfRequiredActivations": {
+      "value": 18,
+      "severity": "YELLOW"
+    },
+    "amountOfTimeSeriesInCriticalStatus": {
+      "value": 19,
+      "severity": "RED"
+    },
+    "amountOfTimeSeriesNotSent": {
+      "value": 0,
+      "severity": "GREEN"
+    },
+    "amountOfMeteringPointsNotPreparedForMuMM": {
+      "value": 0,
+      "severity": "GREEN"
+    },
+    "amountOfExpectedNetTimeSeries": {
+      "value": 9,
+      "severity": "YELLOW"
+    },
+    "amountOfImportedNetTimeSeries": {
+      "value": 6,
+      "severity": "YELLOW"
+    },
+    "saldoForLatestTimeSeries": {
+      "value": 2100,
+      "severity": "YELLOW"
+    },
+    "saldoForDifferenceToBalancingRelevantVersion": {
+      "value": 10,
+      "severity": "GREEN"
+    },
+    "saldoForDifferenceToLatestVersion": {
+      "value": 700,
+      "severity": "RED"
+    }
+  },
+  {
+    "tenant": "eagnetzint20170208",
+    "year": 2017,
+    "month": 5,
+    "period": "VERIFICATION_SECOND_BGS",
+    "amountOfRequiredActivations": {
+      "value": 8,
+      "severity": "GREEN"
+    },
+    "amountOfTimeSeriesInCriticalStatus": {
+      "value": 19,
+      "severity": "RED"
+    },
+    "amountOfTimeSeriesNotSent": {
+      "value": 0,
+      "severity": "GREEN"
+    },
+    "amountOfMeteringPointsNotPreparedForMuMM": {
+      "value": 0,
+      "severity": "GREEN"
+    },
+    "amountOfExpectedNetTimeSeries": {
+      "value": 9,
+      "severity": "YELLOW"
+    },
+    "amountOfImportedNetTimeSeries": {
+      "value": 6,
+      "severity": "YELLOW"
+    },
+    "saldoForLatestTimeSeries": {
+      "value": 2100,
+      "severity": "YELLOW"
+    },
+    "saldoForDifferenceToBalancingRelevantVersion": {
+      "value": 10,
+      "severity": "GREEN"
+    },
+    "saldoForDifferenceToLatestVersion": {
+      "value": 700,
+      "severity": "RED"
+    }
+  },
+  {
+    "tenant": "eagnetzint20170208",
+    "year": 2017,
+    "month": 4,
+    "period": "FINISHED",
+    "amountOfRequiredActivations": {
+      "value": 8,
+      "severity": "GREEN"
+    },
+    "amountOfTimeSeriesInCriticalStatus": {
+      "value": 19,
+      "severity": "RED"
+    },
+    "amountOfTimeSeriesNotSent": {
+      "value": 8,
+      "severity": "RED"
+    },
+    "amountOfMeteringPointsNotPreparedForMuMM": {
+      "value": 0,
+      "severity": "GREEN"
+    },
+    "amountOfExpectedNetTimeSeries": {
+      "value": 9,
+      "severity": "GREEN"
+    },
+    "amountOfImportedNetTimeSeries": {
+      "value": 6,
+      "severity": "YELLOW"
+    },
+    "saldoForLatestTimeSeries": {
+      "value": 4900,
+      "severity": "GREEN"
+    },
+    "saldoForDifferenceToBalancingRelevantVersion": {
+      "value": 10,
+      "severity": "GREEN"
+    },
+    "saldoForDifferenceToLatestVersion": {
+      "value": 700,
+      "severity": "RED"
+    }
+  }
+]
+
