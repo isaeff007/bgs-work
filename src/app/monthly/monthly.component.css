@@ -45,16 +45,16 @@
 }
 
 
-.badge1 {
+.badge {
   position:relative;
 }
-.badge1[data-badge]:after {
+.badge[data-badge]:after {
   content:attr(data-badge);
   position:absolute;
   top:-10px;
   right:-10px;
   font-size:.7em;
-  background:green;
+  background: #2196F3;
   color:white;
   width:40px;height:18px;
   text-align:center;
@@ -62,6 +62,17 @@
   border-radius:50%;
   box-shadow:0 0 1px #333;
 }
+
+.label {
+  color: white;
+  padding: 8px;
+}
+
+.success {background: #4CAF50;} /* Green */
+.info {background: #2196F3;} /* Blue */
+.warning {background: #ff9800;} /* Orange */
+.danger {background: #f44336;} /* Red */
+.other {background: #e7e7e7; color: black;} /* Gray */
 
 .badge2 {
   position:relative;

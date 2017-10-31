@@ -47,11 +47,13 @@ export class MonthlyComponent implements OnInit {
  public geSeverityClass(severity: string): string {
    switch (severity) {
      case 'GREEN':
-       return 'badge1';
+       return 'success';
      case 'RED':
-       return 'badge2';
+       return 'danger';
+     case 'YELLOW':
+       return 'warning'
      default:
-       return 'button1';
+       return 'info';
 
    }
  }
