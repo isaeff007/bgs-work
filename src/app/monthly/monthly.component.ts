@@ -2,7 +2,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import {BalancingOverviewMonthlyDTO} from './balancing-overview-monthly-dto';
 import {MonthlyService} from './monthly.service';
 import {Severity} from './severity.enum';
-import {Carousel} from 'primeng/primeng';
+import {Carousel, SelectItem} from 'primeng/primeng';
+import {MgaDTO} from './MgaDto';
 
 @Component({
   selector: 'app-monthly',
@@ -16,20 +17,45 @@ export class MonthlyComponent implements OnInit {
   @ViewChild('crsl') mCarousel: Carousel;
 
   months:  BalancingOverviewMonthlyDTO[];
+
+  // MGA
+  mgas: MgaDTO[];
+  myMgas: SelectItem[];
+  selectedMyMga: MgaDTO;
+  // MGA end
+
   monthly: BalancingOverviewMonthlyDTO;
   pageIndex: number;
   goToIndex: number;
 
-  constructor(private service: MonthlyService) { }
+  constructor(private service: MonthlyService) {
 
-
-
-  ngOnInit() {
-  this.service.getAllMonths().subscribe(data => this.months = data, err => console.log(err));
-  this.goToIndex = 0;
 
   }
 
+
+  ngOnInit() {
+    this.service.getAllMonths().subscribe(data => this.months = data, err => console.log(err));
+
+    this.myMgas = [];
+    this.service.getMgas().subscribe(data => this.mgas = data, err => console.log(err),
+      () => {
+        this.mgas.forEach(mga => this.myMgas.push({label: mga.name, value: mga}));
+
+        this.selectedMyMga = this.mgas[0];
+      });
+
+
+    this.goToIndex = 0;
+    // this.mgas.forEach(mga => this.myMgas.push( {label: mga.name, value: mga}));
+
+  }
+
+  // new mga selected
+  handleChange(event) {
+    console.log('Selected ' + event.value.id + '----' + event.value.name);
+    // call the bgs rest api with the MGA id event.value.id
+  }
 
   setPage(page) {
     this.pageIndex = page.page;
@@ -51,7 +77,7 @@ export class MonthlyComponent implements OnInit {
      case 'RED':
        return 'danger';
      case 'YELLOW':
-       return 'warning'
+       return 'warning';
      default:
        return 'info';
 

@@ -5,6 +5,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/do';
 import {BalancingOverviewMonthlyDTO} from './balancing-overview-monthly-dto';
+import {MgaDTO} from './MgaDto';
 
 
 @Injectable()
@@ -18,7 +19,17 @@ export class MonthlyService {
     this.dtoUrl = 'assets/data/overview.json';
     return this.http.get(this.dtoUrl)
       .map((response: Response) =>
-          response.json()
+        response.json()
+
+      ).do( data =>  console.log(data));
+
+  }
+
+  getMgas(): Observable<MgaDTO[]> {
+    this.dtoUrl = 'assets/data/mga.json';
+    return this.http.get(this.dtoUrl)
+      .map((response: Response) =>
+        response.json()
 
       ).do( data =>  console.log(data));
 

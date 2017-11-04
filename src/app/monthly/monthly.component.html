@@ -1,6 +1,11 @@
 <p>{{months?.length}}</p>
 <p>    Current page: {{pageIndex}}</p>
 <button pButton type="button" (click)="onclick()" label="Click"></button>
+
+<h3>MGA</h3>
+<p-dropdown [options]="myMgas" [(ngModel)]="selectedMyMga" placeholder="Select a Mga" (onChange)="handleChange($event)"></p-dropdown>
+<p>Selected MGA: {{selectedMyMga?.name}}</p>
+
 <p-carousel #crsl [value]="months" numVisible="2" pageLinks="9" headerText="Monatsübersicht" (onPage)="setPage($event)" [firstVisible]="goToIndex">
   <ng-template let-month pTemplate="item" >
     <div class="ui-tabview">

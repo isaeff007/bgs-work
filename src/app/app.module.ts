@@ -2,7 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule , CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import {CarouselModule, ButtonModule} from 'primeng/primeng';
+import {CarouselModule, ButtonModule, DropdownModule} from 'primeng/primeng';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { MonthlyComponent } from './monthly/monthly.component';
 
@@ -16,7 +17,10 @@ import { MonthlyComponent } from './monthly/monthly.component';
     HttpModule,
     JsonpModule,
     CarouselModule,
-    ButtonModule
+    ButtonModule,
+    DropdownModule,
+    BrowserAnimationsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent],
