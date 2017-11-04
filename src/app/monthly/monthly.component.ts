@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import {BalancingOverviewMonthlyDTO} from './balancing-overview-monthly-dto';
 import {MonthlyService} from './monthly.service';
 import {Severity} from './severity.enum';
-import {Carousel, SelectItem} from 'primeng/primeng';
+import {Carousel, Dropdown, SelectItem} from 'primeng/primeng';
 import {MgaDTO} from './MgaDto';
 
 @Component({
@@ -15,6 +15,7 @@ export class MonthlyComponent implements OnInit {
 
   // to have access to mCarousel component functions (s. github)
   @ViewChild('crsl') mCarousel: Carousel;
+  @ViewChild('dddw') mDropDown: Dropdown;
 
   months:  BalancingOverviewMonthlyDTO[];
 
@@ -43,6 +44,10 @@ export class MonthlyComponent implements OnInit {
         this.mgas.forEach(mga => this.myMgas.push({label: mga.name, value: mga}));
 
         this.selectedMyMga = this.mgas[0];
+        // Add the default option at position 0
+        this.myMgas.splice(0, 0, {label: 'LastSelectedMGA', value: {id: 5, name: 'LastSelectedMGA'}});
+        //workaround to set the last selected MGA (for example with id 2)
+        this.mDropDown.selectItem(event, this.myMgas[2])
       });
 
 

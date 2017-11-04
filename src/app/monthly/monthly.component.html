@@ -3,7 +3,7 @@
 <button pButton type="button" (click)="onclick()" label="Click"></button>
 
 <h3>MGA</h3>
-<p-dropdown [options]="myMgas" [(ngModel)]="selectedMyMga" placeholder="Select a Mga" (onChange)="handleChange($event)"></p-dropdown>
+<p-dropdown #dddw [options]="myMgas" [(ngModel)]="selectedMyMga" placeholder="Select a Mga" (onChange)="handleChange($event)"></p-dropdown>
 <p>Selected MGA: {{selectedMyMga?.name}}</p>
 
 <p-carousel #crsl [value]="months" numVisible="2" pageLinks="9" headerText="Monatsübersicht" (onPage)="setPage($event)" [firstVisible]="goToIndex">
